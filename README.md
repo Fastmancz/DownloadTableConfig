@@ -46,9 +46,31 @@ Provides an easy to use download configs with file prefixes.
 ## How to use
 1. `#include <dtc>`
 2. Create and load config 
-  ``` public OnPluginStart()
-{
-	DTC_CreateConfig(ConfigPath, OnCreateConfig);
-	DTC_LoadConfig(ConfigPath, OnFile, OnFile);
-}
+```
+ public OnPluginStart()
+ {
+  	  DTC_CreateConfig(ConfigPath, OnCreateConfig); // Not needed
+  	  DTC_LoadConfig(ConfigPath, OnFile);
+ }
+
+ public OnCreateConfig(String:sConfigPath[], Handle:hConfigFile)
+ {
+  	  WriteFileLine(hConfigFile, "// [Mark <team> <scale> <offset>]");
+  	  WriteFileLine(hConfigFile, "");
+  	  WriteFileLine(hConfigFile, "[Mark Red 0.125 12.0] materials/sprites/laserbeam.vmt");
+ }
+ 
+ public OnFile(String:sFile[], String:sPrefixName[DTC_MAX_NAME_LEN], Handle:hArgs)
+ {
+  	  if (StrEqual(sPrefixName, "Mark")) {
+	
+  	    	  new String:sHelper[64];
+  	    	  DTC_GetArg(hArgs, 1, sHelper, sizeof(sHelper), "ERROR");
+	
+  	    	  LogMessage("File = '%s'", sFile);
+  	    	  LogMessage("Arg1 = '%s'", sHelper);
+  	    	  LogMessage("Arg2 = '%.3f'", DTC_GetArgFloat(hArgs, 2, 0.0));
+  	    	  LogMessage("Arg3 = '%.3f'", DTC_GetArgFloat(hArgs, 3, -1.0));
+  	  }
+ }
 ```
