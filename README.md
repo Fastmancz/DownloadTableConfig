@@ -75,6 +75,7 @@ With DTC you can easily create download config and give some files prefixes, whi
  
  public OnFile(String:sFile[], String:sPrefixName[DTC_MAX_NAME_LEN], Handle:hArgs)
  {
+  	  // Catch file with prefix "Mark"
   	  if (StrEqual(sPrefixName, "Mark")) {
 	
   	    	  new String:sHelper[64];
