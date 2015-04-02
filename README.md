@@ -41,4 +41,4 @@ Provides easy to use download configs with file prefixes.
 
 [Mark Blue 12.0 0.125] materials/decals/custom/bluestar.vmt
 	materials/decals/custom/bluestar.vtf
-```
+  ```
