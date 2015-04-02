@@ -16,7 +16,7 @@ With DTC you can easily create download config and give some files prefixes, whi
 - Lines are trimed before proccesing, so you can indent lines with whitespaces or tabs
 
 **File example:**
-```
+```INI
 // comment line
 # comment line
 ; comment line
