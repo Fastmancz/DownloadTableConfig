@@ -10,6 +10,7 @@ Provides easy to use download configs with file prefixes.
   - e.g. `[Mark Red 12.0 0.125] materials/decals/custom/redstar.vmt`
 - Arguments cannot contain `]` (must be escaped to use `\]`)
 - String arguments with whitespace must be quoted e.g. `[PrefixName 1.0 "whitespace test"]`
+- Lines are trimed before proccesing, so you can indent lines with whitespaces or tabs
 
 File example:
 ```
