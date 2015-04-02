@@ -1,5 +1,4 @@
-# [DTC] DownloadTableConfig
-
+## [DTC] DownloadTableConfig
 Provides easy to use download configs with file prefixes.
 
 ## File format
