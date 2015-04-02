@@ -48,7 +48,7 @@ With DTC you can easily create download config and give some files prefixes, whi
 ## How to use
 1. `#include <dtc>`
 2. Create and load config 
-```
+  ```
  public OnPluginStart()
  {
   	  DTC_CreateConfig(ConfigPath, OnCreateConfig); // Not needed
@@ -75,5 +75,5 @@ With DTC you can easily create download config and give some files prefixes, whi
   	    	  LogMessage("Arg3 = '%.3f'", DTC_GetArgFloat(hArgs, 3, -1.0));
   	  }
  }
-```
+  ```
 A lot of features is shown in [test plugin](https://github.com/KissLick/DownloadTableConfig/blob/master/addons/sourcemod/scripting/DTC_Test.sp) and [here](https://github.com/KissLick/DownloadTableConfig/blob/master/addons/sourcemod/logs/test_log.cfg) is the plugin output.
