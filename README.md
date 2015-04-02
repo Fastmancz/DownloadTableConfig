@@ -1,7 +1,9 @@
 ## [DTC] DownloadTableConfig
+
 Provides easy to use download configs with file prefixes.
 
 ## File format
+
 - Each line contains one file at max
   - e.g. `materials/decals/custom/redstar.vtf` 
 - Blank and commented lines are skiped
