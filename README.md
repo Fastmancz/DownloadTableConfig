@@ -8,6 +8,7 @@ Provides easy to use download configs with file prefixes.
 - Blank and commented lines are skiped
 - Each file can have prefix `[PrefixName PrefixArg1 PrefixArg2 PrefixArg3 ...] FilePath`
   - e.g. `[Mark Red 12.0 0.125] materials/decals/custom/redstar.vmt`
+- Arguments cannot contain `]` (must be escaped to use `\]`)
 
 File example:
 ```
