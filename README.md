@@ -11,7 +11,7 @@ With DTC you can easily create download config and give some files prefixes, whi
 - Each file can have prefix `[PrefixName PrefixArg1 PrefixArg2 PrefixArg3 ...] FilePath`
   - e.g. `[Mark Red 12.0 0.125] materials/decals/custom/redstar.vmt`
   - Prefix are selected via RegEx `/^\[(?:[^\\\]]|\\.)*\]/gm`
-- Arguments cannot contain `]` (must be escaped to use `\]`)
+- Arguments cannot contain `]` (must be escaped to `\]`)
 - String arguments with whitespace must be quoted e.g. `[PrefixName 1.0 "whitespace test"]`
 - Lines are trimed before proccesing, so you can indent lines with whitespaces or tabs
 
