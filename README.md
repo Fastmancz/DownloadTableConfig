@@ -46,10 +46,11 @@ With DTC you can easily create download config and give some files prefixes, whi
 ```
 
 ## How to use
-1.
+1. Include DTC
   ```SourcePawn
 #include <dtc>
   ```
+
 2. Create and load config 
   ```SourcePawn
  public OnPluginStart()
