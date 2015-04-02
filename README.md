@@ -12,7 +12,8 @@ Provides easy to use download configs with file prefixes.
 - String arguments with whitespace must be quoted e.g. `[PrefixName 1.0 "whitespace test"]`
 - Lines are trimed before proccesing, so you can indent lines with whitespaces or tabs
 
-File example:
+**File example:**
+
  ```
 // comment line
 # comment line
