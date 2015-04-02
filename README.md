@@ -13,8 +13,7 @@ Provides easy to use download configs with file prefixes.
 - Lines are trimed before proccesing, so you can indent lines with whitespaces or tabs
 
 **File example:**
-
-  ```
+```
 // comment line
 # comment line
 ; comment line
@@ -41,4 +40,4 @@ Provides easy to use download configs with file prefixes.
 
 [Mark Blue 12.0 0.125] materials/decals/custom/bluestar.vmt
 	materials/decals/custom/bluestar.vtf
-  ```
+```
