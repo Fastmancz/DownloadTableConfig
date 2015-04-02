@@ -3,6 +3,12 @@
 Provides easy to use download configs with file prefixes.
 
 ## File format
+`FilePath`
+  - e.g. `materials/decals/custom/redstar.vtf` 
+`[PrefixName PrefixArg1 PrefixArg2 PrefixArg3 ...] FilePath`
+  - e.g. `[Mark Red 12.0 0.125] materials/decals/custom/redstar.vmt`
+
+File example:
 ```
 // comment line
 # comment line
