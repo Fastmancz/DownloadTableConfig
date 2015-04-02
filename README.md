@@ -55,7 +55,7 @@ With DTC you can easily create download config and give some files prefixes, whi
   ```SourcePawn
  public OnPluginStart()
  {
-  	  DTC_CreateConfig(ConfigPath, OnCreateConfig); // Not needed
+  	  DTC_CreateConfig(ConfigPath, OnCreateConfig);
  }
 
  public OnCreateConfig(String:sConfigPath[], Handle:hConfigFile)
