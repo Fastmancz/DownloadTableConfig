@@ -1,6 +1,6 @@
 ## [DTC] DownloadTableConfig
 
-Provides easy to use download configs with file prefixes.
+Provides an easy to use download configs with file prefixes.
 
 ## File format
 
