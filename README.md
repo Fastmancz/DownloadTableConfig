@@ -14,7 +14,7 @@ Provides easy to use download configs with file prefixes.
 
 **File example:**
 
- ```
+  ```
 // comment line
 # comment line
 ; comment line
