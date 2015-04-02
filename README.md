@@ -1,3 +1,4 @@
+`Redcarpet.new("Hello World!")`{.ruby}
 ## [DTC] DownloadTableConfig
 
 With DTC you can easily create download config and give some files prefixes, which highlight that file on config loading (and also can contain some arguments set by server master). You no more need to create bunch of convars or KeyValue config for settings of your files (like scale of the texture, team for the texture etc.).
