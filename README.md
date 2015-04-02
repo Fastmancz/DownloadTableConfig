@@ -45,7 +45,8 @@ Provides an easy to use download configs with file prefixes.
 
 ## How to use
 1. `#include <dtc>`
-2. Create and load config ``` public OnPluginStart()
+2. Create and load config 
+  ``` public OnPluginStart()
 {
 	DTC_CreateConfig(ConfigPath, OnCreateConfig);
 	DTC_LoadConfig(ConfigPath, OnFile, OnFile);
