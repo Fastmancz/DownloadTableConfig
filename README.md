@@ -7,6 +7,8 @@ Provides easy to use download configs with file prefixes.
 - Blank and commented lines are skiped
 - Each file can have prefix `[PrefixName PrefixArg1 PrefixArg2 PrefixArg3 ...]`
 
+<br>
+
 1. `FilePath`
   - e.g. `materials/decals/custom/redstar.vtf` 
 2. `[PrefixName PrefixArg1 PrefixArg2 PrefixArg3 ...] FilePath`
