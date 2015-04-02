@@ -42,3 +42,12 @@ Provides an easy to use download configs with file prefixes.
 [Mark Blue 12.0 0.125] materials/decals/custom/bluestar.vmt
 	materials/decals/custom/bluestar.vtf
 ```
+
+## How to use
+1. `#include <dtc>`
+2. Create and load config ``` public OnPluginStart()
+{
+	DTC_CreateConfig(ConfigPath, OnCreateConfig);
+	DTC_LoadConfig(ConfigPath, OnFile, OnFile);
+}
+```
