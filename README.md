@@ -4,14 +4,9 @@ Provides easy to use download configs with file prefixes.
 
 ## File format
 - Each line contains one file at max
-- Blank and commented lines are skiped
-- Each file can have prefix `[PrefixName PrefixArg1 PrefixArg2 PrefixArg3 ...]`
-
-<br>
-
-1. `FilePath`
   - e.g. `materials/decals/custom/redstar.vtf` 
-2. `[PrefixName PrefixArg1 PrefixArg2 PrefixArg3 ...] FilePath`
+- Blank and commented lines are skiped
+- Each file can have prefix `[PrefixName PrefixArg1 PrefixArg2 PrefixArg3 ...] FilePath`
   - e.g. `[Mark Red 12.0 0.125] materials/decals/custom/redstar.vmt`
 
 File example:
