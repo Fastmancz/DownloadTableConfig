@@ -51,12 +51,11 @@ With DTC you can easily create download config and give some files prefixes, whi
 #include <dtc>
   ```
 
-2. Create and load config 
+2. Create config (optional)
   ```SourcePawn
  public OnPluginStart()
  {
   	  DTC_CreateConfig(ConfigPath, OnCreateConfig); // Not needed
-  	  DTC_LoadConfig(ConfigPath, OnFile);
  }
 
  public OnCreateConfig(String:sConfigPath[], Handle:hConfigFile)
@@ -64,6 +63,14 @@ With DTC you can easily create download config and give some files prefixes, whi
   	  WriteFileLine(hConfigFile, "// [Mark <team> <scale> <offset>]");
   	  WriteFileLine(hConfigFile, "");
   	  WriteFileLine(hConfigFile, "[Mark Red 0.125 12.0] materials/sprites/laserbeam.vmt");
+ }
+  ```
+
+3. Load config
+  ```Sourcepawn
+ public OnPluginStart()
+ {
+  	  DTC_LoadConfig(ConfigPath, OnFile);
  }
  
  public OnFile(String:sFile[], String:sPrefixName[DTC_MAX_NAME_LEN], Handle:hArgs)
