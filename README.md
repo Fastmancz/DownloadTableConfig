@@ -13,7 +13,7 @@ Provides easy to use download configs with file prefixes.
 - Lines are trimed before proccesing, so you can indent lines with whitespaces or tabs
 
 File example:
-```
+ ```
 // comment line
 # comment line
 ; comment line
