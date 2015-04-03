@@ -55,7 +55,7 @@ With DTC you can easily create download config and give some files prefixes, whi
   ```SourcePawn
  public OnPluginStart()
  {
-  	  DTC_CreateConfig(ConfigPath, OnCreateConfig);
+  	  DTC_CreateConfig(sConfigPath, OnCreateConfig);
  }
 
  public OnCreateConfig(String:sConfigPath[], Handle:hConfigFile)
@@ -70,7 +70,7 @@ With DTC you can easily create download config and give some files prefixes, whi
   ```Sourcepawn
  public OnPluginStart()
  {
-  	  DTC_LoadConfig(ConfigPath, OnFile);
+  	  DTC_LoadConfig(sConfigPath, OnFile);
  }
  
  public OnFile(String:sFile[], String:sPrefixName[DTC_MAX_NAME_LEN], Handle:hArgs)
