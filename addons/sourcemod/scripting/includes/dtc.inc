@@ -1,7 +1,7 @@
 #if defined _downloadtableconfig_included_
 	#endinput
 #endif
-#define _downloadtableconfig_included_ "0.6"
+#define _downloadtableconfig_included_ "0.7"
 
 #include <sdktools>
 #include <regex>
@@ -61,7 +61,7 @@ stock bool:DTC_CreateConfig(String:sConfigPath[], DTC_OnCreateConfig:OnCreateCon
 	return true;
 }
 
-stock bool:DTC_LoadConfig(String:sConfigPath[], DTC_OnFile:OnFile = INVALID_FUNCTION, DTC_OnFileNotFound:OnFileNotFound = INVALID_FUNCTION, bool:bAutoDownload = true)
+stock bool:DTC_LoadConfig(String:sConfigPath[], DTC_OnFile:OnFile = INVALID_FUNCTION, DTC_OnFileNotFound:OnFileNotFound = INVALID_FUNCTION, bool:bCallBackForPrefixesOnly = true, bool:bAutoDownload = true)
 {
 	new Handle:hConfig = OpenFile(sConfigPath, "r");
 	
@@ -115,7 +115,7 @@ stock bool:DTC_LoadConfig(String:sConfigPath[], DTC_OnFile:OnFile = INVALID_FUNC
 			if (bAutoDownload)
 				AddFileToDownloadsTable(sFile);
 			
-			if (OnFile != INVALID_FUNCTION) {
+			if (OnFile != INVALID_FUNCTION && (!bCallBackForPrefixesOnly || (bCallBackForPrefixesOnly && sPrefixName[0] != '\0'))) {
 				Call_StartFunction(INVALID_HANDLE, OnFile);
 				Call_PushString(sFile);
 				Call_PushString(sPrefixName);
