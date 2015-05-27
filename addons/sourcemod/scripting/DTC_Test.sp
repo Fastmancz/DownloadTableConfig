@@ -6,7 +6,7 @@ public Plugin:myinfo =
 	name = "DTC_Test",
 	author = "Raska",
 	description = "",
-	version = "0.5",
+	version = "0.6",
 	url = ""
 };
 
@@ -16,12 +16,11 @@ public OnPluginStart()
 	BuildPath(Path_SM, sConfig1, sizeof (sConfig1), "configs/dtc_test_1.cfg");
 	BuildPath(Path_SM, sConfig2, sizeof (sConfig2), "configs/dtc_test_2.cfg");
 	
-	// Create test configs
-	DTC_CreateConfig(sConfig1, OnCreateConfig1, false);
-	DTC_CreateConfig(sConfig2, OnCreateConfig2);
+	// Create and load test config1
+	DTC_CreateAndLoadConfig(sConfig1, OnCreateConfig1, OnFile, OnFile);
 	
-	// Loade test config1
-	DTC_LoadConfig(sConfig1, OnFile, OnFile);
+	// Create test config2
+	DTC_CreateConfig(sConfig2, OnCreateConfig2);
 	
 	// Test strings (file & prefix + arguments) out of config
 	TestStrings();
