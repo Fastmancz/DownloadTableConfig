@@ -1,7 +1,7 @@
 #if defined _downloadtableconfig_included_
 	#endinput
 #endif
-#define _downloadtableconfig_included_ "0.7"
+#define _downloadtableconfig_included_ "0.8"
 
 #include <sdktools>
 #include <regex>
@@ -132,6 +132,11 @@ stock bool:DTC_LoadConfig(String:sConfigPath[], DTC_OnFile:OnFile = INVALID_FUNC
 	
 	CloseHandle(hConfig);
 	return true;
+}
+
+stock bool:DTC_CreateAndLoadConfig(String:sConfigPath[], DTC_OnCreateConfig:OnCreateConfig = INVALID_FUNCTION, DTC_OnFile:OnFile = INVALID_FUNCTION, DTC_OnFileNotFound:OnFileNotFound = INVALID_FUNCTION)
+{
+	return DTC_CreateConfig(sConfigPath, OnCreateConfig) && DTC_LoadConfig(sConfigPath, OnFile, OnFileNotFound);
 }
 
 stock bool:DTC_ParseString(const String:sLine[], String:sFile[], iMaxFileSize, String:sPrefixName[], iMaxPrefixNameSize, &Handle:hArgs = INVALID_HANDLE)
