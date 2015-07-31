@@ -87,4 +87,4 @@ With DTC you can easily create download config and give some files prefixes, whi
   	  }
  }
   ```
-A lot of features is shown in [test plugin](https://github.com/KissLick/DownloadTableConfig/blob/master/addons/sourcemod/scripting/DTC_Test.sp) and [here](https://github.com/KissLick/DownloadTableConfig/blob/master/addons/sourcemod/logs/test_log.cfg) is the plugin output.
+Many features are shown in [test plugin](https://github.com/KissLick/DownloadTableConfig/blob/master/addons/sourcemod/scripting/DTC_Test.sp) and [here](https://github.com/KissLick/DownloadTableConfig/blob/master/addons/sourcemod/logs/test_log.cfg) is the plugin output.
